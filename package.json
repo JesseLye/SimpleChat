@@ -1,0 +1,15 @@
+{
+  "name": "pp4_server",
+  "version": "1.0.0",
+  "description": "Shamchat clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jesse Lye",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.1.1"
+  }
+}

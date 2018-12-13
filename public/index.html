@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title>WebSockets 101</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="header__title">SimpleChat</h1>
+    </div>
+    <div class="chat" id="chat-box">
+      <div class="chat-window" id="chat-window">
+		    <div class="chat-window__app-status" id="app-status"></div>
+        <div class="chat-window__output" id="output"></div>
+        <div class="chat-window__feedback" id="feedback"></div>
+        <div class="init-prompt" id="init-prompt">
+          <h2 class="init-prompt__header">Talk To Simpletons!</h2>
+          <button class="init-prompt__button" id="handleConnection-prompt">Start New Chat</button>
+        </div>
+      </div>
+      <div class="input">
+        <button class="input__handle-connection" id="handleConnection-input">Connect</button>
+        <textarea
+          class="input__message"
+          id="message"
+          placeholder="Type your message."
+          cols="80"
+          rows="3"
+          disabled
+        ></textarea>
+        <button class="input__send" id="send">Send</button>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    <script src="chat.js"></script>
+  </body>
+</html>
